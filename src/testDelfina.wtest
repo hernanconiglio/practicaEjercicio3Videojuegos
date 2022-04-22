@@ -1,0 +1,21 @@
+import delfina.*
+import consolas.*
+import juegos.*
+
+test "Delfina juega al arkanoid con la play y su diversión será 50" {
+
+	assert.that(true)
+	delfina.jugar(arkanoid)
+	assert.equals(50,delfina.diversion())
+	assert.that(delfina.diversion() == 50)
+	assert.notThat(delfina.diversion() == 8850)
+	
+}
+
+
+test "Delfina ahora va a tener diversión 150" {
+	delfina.jugar(arkanoid)
+	assert.equals(50,delfina.diversion())
+	delfina.jugar(mario)
+	assert.equals(150,delfina.diversion())
+}

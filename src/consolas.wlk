@@ -1,6 +1,5 @@
 object play {
 	method jugabilidad() = 10
-	
 	method usar() {}
 }
 
@@ -13,4 +12,5 @@ object portatil {
 	}
 	
 	method usar() {bateriaBaja = true}
+
 }
